@@ -45,7 +45,16 @@ const HeroInline = () => {
         <div className="flex flex-col">
           <div className="w-full flex flex-col md:flex-row md:justify-between items-start md:items-end gap-3 md:gap-5">
             <div className="w-full md:w-1/2 flex flex-col gap-4">
-              <Tag text="5 star reviews" icon={Star} className="w-fit bg-white/20 text-white border-white/30 backdrop-blur-md" />
+              <div className="w-fit flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 text-black border border-white/30 backdrop-blur-md text-sm font-medium">
+                <div className="flex items-center gap-0.5">
+                  <Star className="w-4 h-4 fill-black text-black" />
+                  <Star className="w-4 h-4 fill-black text-black" />
+                  <Star className="w-4 h-4 fill-black text-black" />
+                  <Star className="w-4 h-4 fill-black text-black" />
+                  <Star className="w-4 h-4 fill-black text-black" />
+                </div>
+                <span>5 star reviews</span>
+              </div>
               <TextAnimation
                 text={"Redefining alpine elegance. Discover a sanctuary of unparalleled luxury nestled in the heart of the Swiss Alps, where breathtaking vistas meet world-class service."}
                 variant="slide-up"
